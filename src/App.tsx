@@ -155,14 +155,19 @@ function App() {
 
       <section
         id="accueil"
-        className="scroll-mt-24 pt-24 sm:pt-32 pb-14 sm:pb-20 px-4 sm:px-6 lg:px-8 min-h-[90vh] flex items-center"
-        style={{
-          backgroundImage: `linear-gradient(rgba(16,185,129,0.08), rgba(45,212,191,0.04)), url(${image2})`,
-          backgroundSize: 'cover',
-          backgroundPosition: 'center'
-        }}
+        className="scroll-mt-24 relative overflow-hidden pt-24 sm:pt-32 pb-14 sm:pb-20 px-4 sm:px-6 lg:px-8 min-h-[90vh] flex items-center"
       >
-        <div className="max-w-7xl mx-auto w-full">
+        <img
+          src={image2}
+          alt=""
+          aria-hidden="true"
+          className="absolute inset-0 h-full w-full object-cover object-center"
+          loading="eager"
+          decoding="async"
+        />
+        <div className="absolute inset-0 bg-gradient-to-b from-emerald-500/10 to-teal-400/5" />
+
+        <div className="relative max-w-7xl mx-auto w-full">
           <div className="text-center">
             <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 mb-5 sm:mb-6 leading-tight">
               Bienvenue chez <span className="text-emerald-600">MACKA FILS</span>
@@ -217,14 +222,19 @@ function App() {
 
       <section
         id="services"
-        className="scroll-mt-24 py-14 sm:py-20 px-4 sm:px-6 lg:px-8"
-        style={{
-          backgroundImage: `linear-gradient(rgba(249,250,251,0.7), rgba(249,250,251,0.7)), url(${image1})`,
-          backgroundSize: 'cover',
-          backgroundPosition: 'center'
-        }}
+        className="scroll-mt-24 relative overflow-hidden py-14 sm:py-20 px-4 sm:px-6 lg:px-8"
       >
-        <div className="max-w-7xl mx-auto">
+        <img
+          src={image1}
+          alt=""
+          aria-hidden="true"
+          className="absolute inset-0 h-full w-full object-cover object-center"
+          loading="lazy"
+          decoding="async"
+        />
+        <div className="absolute inset-0 bg-gray-50/70" />
+
+        <div className="relative max-w-7xl mx-auto">
           <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-center text-gray-900 mb-5 sm:mb-6">
             Nos Services et Activités
           </h2>
