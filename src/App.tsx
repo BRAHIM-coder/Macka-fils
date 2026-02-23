@@ -47,7 +47,7 @@ function App() {
       icon: <Package className="w-8 h-8" />,
       title: 'Importation',
       description:
-        'Nous importons des biens de consommation, des matériaux de construction et des technologies renouvelables ainsi que des intrants agricoles.'
+        'Nous importons des biens de consommation, des matériaux de construction, des équipements sanitaires et des technologies renouvelables ainsi que des intrants agricoles.'
     },
     {
       icon: <Plane className="w-8 h-8" />,
